@@ -20,8 +20,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(16px + 2vmin);
   color: white;
+  padding: 1em;
 }
 
 .App-link {
@@ -35,4 +36,76 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-1 {
+  position: relative;
+  width: 70vmin;
+  background-color: #fafafa;
+  padding: 1em;
+  border-radius: 0.2em;
+}
+.radio-group {
+  margin-bottom: 10px;
+}
+.input-id {
+  height: 1.7em;
+  margin-bottom: 10px;
+  width: 95%;
+  padding: 10px;
+}
+.input-id:focus {
+  outline: none;
+}
+
+/* /////////////////////// */
+
+.el-page-wrap {
+  width: 90%;
+  background-color: #fafafa;
+  padding: 1em;
+  border-radius: 0.2em;
+  margin-bottom: 2em;
+}
+.student-info {
+  color: #282c34;
+}
+.texth {
+  /* font-size: calc(1em + 1vmin); */
+  font-weight: bold;
+}
+.show-party {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list-party {
+  flex: 0 0 calc(90% / 3);
+  max-width: calc(90% / 3);
+  margin: calc(10% / 6);
+}
+.list-party img {
+  width: 100%;
+}
+.form-title {
+  color: #282c34;
+}
+/* HIDE RADIO */
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type="radio"] + img {
+  cursor: pointer;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* CHECKED STYLES */
+[type="radio"]:checked + img {
+  outline: 10px dashed #ff9100;
+  outline-offset: 5px;
 }
